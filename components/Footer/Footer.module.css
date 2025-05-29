@@ -1,0 +1,9 @@
+.wrapper {
+  background: rgb(242,237,229);
+  background: linear-gradient(0deg, rgba(242,237,229,1) 4%, rgba(170,173,176,1) 85%);
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+  }

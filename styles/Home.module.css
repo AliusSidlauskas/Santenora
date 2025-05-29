@@ -1,0 +1,33 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(242,237,229);
+background: transparent;
+    height: auto ;
+    padding: 5rem;
+    margin: 3rem
+}
+
+.link{
+    margin-top: 4rem;
+    text-decoration: none;
+    color: black;
+    border: 2px solid;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.logo{
+    height: 200px;
+    width: auto;
+}
+
+.main p{
+    margin: 0 auto; 
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 2;
+    font-style: italic;
+}
