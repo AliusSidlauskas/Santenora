@@ -8,7 +8,7 @@ const Hero = () => {
     return(
         <PageTemplate>
             <div className={styles.main}>
-                <h1>Hello world</h1>
+                <h1>Kon to?</h1>
             </div>
         </PageTemplate>
     )

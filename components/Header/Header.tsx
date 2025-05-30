@@ -3,6 +3,7 @@ import styles from "./Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import type { StaticImageData } from "next/image"
+// import burgerBtn from "../../assets/hamburger-sidebar.svg"
 
 type LinkType = {
     id: number;
@@ -25,6 +26,25 @@ const Header = ({logoImg, logo, links}: HeaderProps) => {
                 <Link 
                     href="/" className={styles.logo} 
                     style={{ textDecoration: "none"}} > {logo}</Link> 
+            </div>
+
+            <button
+                onClick={() => setMobileMenuOpen((prevState) => 
+                !prevState)} className={styles.burgerBtn}> 
+                <img src="/hamburger-sidebar.svg" alt="burgerBtn" />
+            </button>
+
+            <div
+                className={`${styles.mobileMenu} ${isMobileMenuOpen && styles.mobileMenuOpen}`}>
+                    <nav className={styles.desktopNav}> 
+                        <ul className={styles.nav}>
+                            {links.map((link) => (
+                                <li key={link.id}>
+                                    <Link href={link.href} className={styles.navLink}>{link.title}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </nav>
             </div>
         </header>
     )
