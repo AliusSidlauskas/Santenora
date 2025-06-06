@@ -1,18 +1,20 @@
 import React from 'react'
 import ServiceCard from '../ServiceCard/ServiceCard'
 import styles from './ServiceCardWrapper.module.css'
+import shop from '../../pages/shop/index'
+import services from '../../pages/services/index'
 
 const serviceCards = [
     {
         title: 'Parduotuvė',
-        image: './',
-        link: './store',
+        image: '/img/shop/shop1.jpg',
+        link: '/shop',
     },
 
     {
         title: 'Paslaugos',
-        image: './',
-        link: './',
+        image: '/img/services/services1.jpg',
+        link: '/services',
     },
 ];
 

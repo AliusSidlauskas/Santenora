@@ -25,7 +25,7 @@ const Header = ({ logo, links}: HeaderProps) => {
                 <Image
                     alt="logo"
                     className={styles.logoImg}
-                    src="/logo.jpg"
+                    src="/assets/logo.jpg"
                     width={100}
                     height={250}
 />
@@ -37,7 +37,7 @@ const Header = ({ logo, links}: HeaderProps) => {
             <button
                 onClick={() => setMobileMenuOpen((prevState) => 
                 !prevState)} className={styles.burgerBtn}> 
-                <img src="/hamburger-sidebar.svg" alt="burgerBtn" />
+                <img src="/assets/hamburger-sidebar.svg" alt="burgerBtn" />
             </button>
 
             <div
